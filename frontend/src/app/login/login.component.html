@@ -1,0 +1,19 @@
+<div class="login responsive">
+    <div class="flipper login-form responsive" id="flipper">
+        <div class="front">
+            <h1 class="title">Login</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="login()" #userlogin="ngForm">
+                <input type="text" placeholder="Username" id="username" name="username" formControlName="username" /><br>
+
+                <!-- <small  *ngIf="name.invalid&&(name.touched||name.dirty||name.errors?.['minlength'])" style="font-weight: bold;color: red;">Enter valid username</small> -->
+                
+                <input type="password" placeholder="Password" id="password" name="password" formControlName="password" />
+                <!-- <small  *ngIf="password.invalid&&(password.touched||password.dirty||password.errors?.['minlength'])" style="font-weight: bold;color: red;">Enter valid Password</small> -->
+                <br>
+                <button class="btn" type="submit" [disabled]="userlogin.form.invalid">Login</button>
+             
+            </form>
+            <br>
+        </div>
+    </div>
+</div>

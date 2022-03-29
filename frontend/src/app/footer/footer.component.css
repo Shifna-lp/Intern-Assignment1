@@ -1,0 +1,19 @@
+.footer{
+    width: 90%;
+    position:absolute;
+    height:25%;
+    margin-top:0 auto;
+    margin-left: 5%;
+    top: 95%;
+    background-color: rgba(243, 121, 21, 0.795);
+}
+.footer-in{
+    text-align: center;
+    color: whitesmoke;
+}
+img:hover{
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
